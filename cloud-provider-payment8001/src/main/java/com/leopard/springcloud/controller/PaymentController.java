@@ -60,7 +60,7 @@ public class PaymentController {
         }
     }
 
-    @GetMapping(value = "/payment/discovery/")
+    @GetMapping(value = "/payment/discovery")
     @ApiOperation(value = "获取注册中心有哪些微服务",httpMethod = "GET")
     public Object discovery(){
 
@@ -76,5 +76,11 @@ public class PaymentController {
             log.info(instance.getServiceId()+"\t"+instance.getHost()+"\t"+instance.getPort()+"\t"+instance.getUri());
         }
         return this.discoveryClient;
+    }
+
+    @GetMapping(value = "/payment/lb")
+    @ApiOperation(value = "获取当前服务端口",httpMethod = "GET")
+    public String getPaymentLb(){
+        return this.serverPort;
     }
 }
