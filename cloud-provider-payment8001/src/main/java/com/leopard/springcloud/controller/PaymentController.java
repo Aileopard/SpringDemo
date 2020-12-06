@@ -3,6 +3,8 @@ package com.leopard.springcloud.controller;
 import com.leopard.springcloud.entities.CommonResult;
 import com.leopard.springcloud.entities.PaymentEntity;
 import com.leopard.springcloud.service.PaymentService;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.client.ServiceInstance;
@@ -20,6 +22,7 @@ import java.util.List;
  */
 @RestController
 @Slf4j
+@Api(value = "/",description = "Payment8001")
 public class PaymentController {
 
     @Resource
@@ -32,6 +35,7 @@ public class PaymentController {
     private String serverPort;
 
     @PostMapping(value = "/payment/create")
+    @ApiOperation(value = "新增payment",httpMethod = "POST")
     public CommonResult create(@RequestBody PaymentEntity paymentEntity){
 
         int result = paymentService.create(paymentEntity);
@@ -44,6 +48,7 @@ public class PaymentController {
     }
 
     @GetMapping(value = "/payment/getPaymentEntity/{id}")
+    @ApiOperation(value = "获取payment",httpMethod = "GET")
     public CommonResult getPaymentEntity(@PathVariable BigDecimal id){
 
         PaymentEntity result = paymentService.getPaymentEntity(id);
@@ -56,6 +61,7 @@ public class PaymentController {
     }
 
     @GetMapping(value = "/payment/discovery/")
+    @ApiOperation(value = "获取注册中心有哪些微服务",httpMethod = "GET")
     public Object discovery(){
 
         // 获取注册中心有哪些微服务

@@ -36,6 +36,7 @@
         <mybatis.plus.spring.boot.version>3.3.2</mybatis.plus.spring.boot.version>
         <slf4j.version>1.7.9</slf4j.version>
         <xxl-job.version>2.2.0</xxl-job.version>
+        <swagger.version>2.6.1</swagger.version>
     </properties>
 
     <!-- 子模块继承之后，提供作用：锁定版本+子modlue不用写groupId和version  -->
@@ -144,6 +145,18 @@
                 <groupId>com.xuxueli</groupId>
                 <artifactId>xxl-job-core</artifactId>
                 <version>${xxl-job.version}</version>
+            </dependency>
+
+            <!-- SwaggerUI -->
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-swagger2</artifactId>
+                <version>${swagger.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-swagger-ui</artifactId>
+                <version>${swagger.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

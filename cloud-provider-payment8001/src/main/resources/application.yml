@@ -76,3 +76,9 @@ logging:
     classpath: logback.xml
 
 
+# SwaggerUI
+mconfig:
+  # 是否开启swagger接口文档
+  swagger-ui-open: true
+
+
