@@ -1,0 +1,16 @@
+server:
+  port: 8002
+
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource            # 当前数据源操作类型
+    driver: oracle.jdbc.driver.OracleDriver
+    url: jdbc:oracle:thin:@127.0.0.1:1521:orcl
+    username: c##leo
+    password: 54leopard
+
+mybatis:
+  mapperLocations: classpath:mapper/*.xml
+  type-aliases-package: com.leopard.springcloud.entities    # 所有Entity别名类所在包
+
+

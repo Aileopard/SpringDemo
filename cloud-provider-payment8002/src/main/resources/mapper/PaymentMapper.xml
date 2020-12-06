@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="com.leopard.springcloud.dao.PaymentDao">
+
+    <insert id="create" parameterType="PaymentEntity">
+        insert into payment(id, serial)  values(#{id},#{serial})
+    </insert>
+
+
+    <!-- 也可以使用resultType,但是推荐使用resultMap -->
+    <resultMap id="BaseResultMap" type="com.leopard.springcloud.entities.PaymentEntity">
+        <id column="ID" property="id" jdbcType="DECIMAL"/>
+        <id column="SERIAL" property="serial" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <select id="getPaymentEntity" parameterType="BigDecimal" resultMap="BaseResultMap">
+        select * from payment where ID= #{id}
+    </select>
+
+</mapper>
+
+
