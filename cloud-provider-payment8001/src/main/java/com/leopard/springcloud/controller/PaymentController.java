@@ -47,6 +47,12 @@ public class PaymentController {
         }
     }
 
+    /**
+     * 跨域问题
+     * @param id
+     * @return
+     */
+    @CrossOrigin(origins = "http://127.0.0.1:5500",maxAge = 3600)
     @GetMapping(value = "/payment/getPaymentEntity/{id}")
     @ApiOperation(value = "获取payment",httpMethod = "GET")
     public CommonResult getPaymentEntity(@PathVariable BigDecimal id){
