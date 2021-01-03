@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="721f9037-424e-4a60-bd8c-563552a2098a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/java/com/leopard/springcloud/controller/PaymentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/java/com/leopard/springcloud/controller/PaymentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-provider-payment8001/src/test/java/com/leopard/springcloud/service/PaymentServiceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-provider-payment8001/src/test/java/com/leopard/springcloud/test/TestMP.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-payment8001/src/test/java/com/leopard/springcloud/test/TestMP.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +56,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../springboot-quartz-demo-master" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -79,36 +80,64 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.EurekaMain7002">
+  <component name="RunManager" selected="JUnit.All in cloud-provider-payment8002">
+    <configuration name="All in cloud-provider-payment8001 (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cloud-provider-payment8001" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in cloud-provider-payment8001" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cloud-provider-payment8001" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in cloud-provider-payment8002" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cloud-provider-payment8002" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PaymentServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cloud-provider-payment8001" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.leopard.springcloud.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.leopard.springcloud.service" />
+      <option name="MAIN_CLASS_NAME" value="com.leopard.springcloud.service.PaymentServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestMP" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cloud-provider-payment8001" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.leopard.springcloud.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.leopard.springcloud.test" />
+      <option name="MAIN_CLASS_NAME" value="com.leopard.springcloud.test.TestMP" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="EurekaMain7001" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="cloud-eureka-server7001" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.leopard.springcloud.EurekaMain7001" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="EurekaMain7002" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="cloud-eureka-server7002" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.leopard.springCloud.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.leopard.springCloud.EurekaMain7002" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GatewayMain9527" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="cloud-gateway-gateway9527" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.leopard.springCloud.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.leopard.springCloud.GatewayMain9527" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -157,8 +186,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.GatewayMain9527" />
-        <item itemvalue="Spring Boot.EurekaMain7002" />
+        <item itemvalue="JUnit.All in cloud-provider-payment8002" />
+        <item itemvalue="JUnit.All in cloud-provider-payment8001 (1)" />
+        <item itemvalue="JUnit.PaymentServiceTest" />
+        <item itemvalue="JUnit.TestMP" />
+        <item itemvalue="JUnit.All in cloud-provider-payment8001" />
       </list>
     </recent_temporary>
   </component>
@@ -202,7 +234,8 @@
       <workItem from="1609224409960" duration="609000" />
       <workItem from="1609402727489" duration="1614000" />
       <workItem from="1609488824498" duration="1146000" />
-      <workItem from="1609595969941" duration="56000" />
+      <workItem from="1609595969941" duration="4136000" />
+      <workItem from="1609672146963" duration="516000" />
     </task>
     <servers />
   </component>
@@ -262,10 +295,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="958" y="122" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1607261835687" />
-    <state x="549" y="168" key="FileChooserDialogImpl" timestamp="1607246755962">
+    <state x="549" y="168" key="FileChooserDialogImpl" timestamp="1609597261060">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1607246755962" />
+    <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1609597261060" />
     <state x="629" y="303" key="Github.ShareDialog" timestamp="1607241777104">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -274,22 +307,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="354" y="117" key="Github.UntrackedFilesDialog/0.0.1536.824@0.0.1536.824" timestamp="1607241805968" />
-    <state width="1118" height="271" key="GridCell.Tab.0.bottom" timestamp="1609404602181">
+    <state width="1493" height="220" key="GridCell.Tab.0.bottom" timestamp="1609672656061">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1118" height="271" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1609404602181" />
-    <state width="1118" height="271" key="GridCell.Tab.0.center" timestamp="1609404602181">
+    <state width="1493" height="220" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1609672656061" />
+    <state width="1493" height="220" key="GridCell.Tab.0.center" timestamp="1609672656061">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1118" height="271" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1609404602181" />
-    <state width="1118" height="271" key="GridCell.Tab.0.left" timestamp="1609404602181">
+    <state width="1493" height="220" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1609672656061" />
+    <state width="1493" height="220" key="GridCell.Tab.0.left" timestamp="1609672656061">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1118" height="271" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1609404602181" />
-    <state width="1118" height="271" key="GridCell.Tab.0.right" timestamp="1609404602181">
+    <state width="1493" height="220" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1609672656061" />
+    <state width="1493" height="220" key="GridCell.Tab.0.right" timestamp="1609672656061">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1118" height="271" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1609404602181" />
+    <state width="1493" height="220" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1609672656061" />
     <state width="1118" height="271" key="GridCell.Tab.1.bottom" timestamp="1609404602181">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -326,14 +359,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="270" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1607246758301" />
-    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1607606724229">
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1609596123277">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1607606724229" />
-    <state x="449" y="237" key="com.intellij.ide.util.TipDialog" timestamp="1609595993448">
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1609596123277" />
+    <state x="449" y="237" key="com.intellij.ide.util.TipDialog" timestamp="1609672147222">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="449" y="237" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1609595993448" />
+    <state x="449" y="237" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1609672147222" />
     <state x="356" y="68" key="new project wizard" timestamp="1607245948715">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
